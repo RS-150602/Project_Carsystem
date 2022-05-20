@@ -84,6 +84,7 @@ def main():
 
     if choice == 4:
         print("The screen will now be cleared in 3 seconds")
+        sleep(3)
         print("\033[2J")
         main()
 
@@ -164,7 +165,7 @@ def main():
             if choice_2 == 5:
                 print("The screen will be cleared in 3 seconds!")
                 sleep(3)
-                os.system('cls')
+                print("\033[2J")
                 main()
             
             if choice_2 == 6:
@@ -195,7 +196,7 @@ def main():
                 print("Invalid input, please enter y/n!")
 
             if choice_3 == "y":
-                os.system('cls')
+                print("\033[2J")
                 main()
             else:
                 choice_3 == "n"
