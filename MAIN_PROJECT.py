@@ -28,6 +28,9 @@ def main():
     while True:
         try:
             basic_price = int(input("What is the price of this vehicle? "))
+            if basic_price < 1:
+                print("Should be a positive number")
+                continue
             if isinstance(basic_price, int):
                 break
         except ValueError:
